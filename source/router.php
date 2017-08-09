@@ -17,4 +17,9 @@ class router implements \agreed\router
 	{
 		return $this->routes [ $key ];
 	}
+
+	public function has ( string $key ) : bool
+	{
+		return array_key_exists ( $key, $this->routes );
+	}
 }
